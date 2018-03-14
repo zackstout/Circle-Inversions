@@ -3,10 +3,22 @@
 //   console.log('jquery');
 // });
 
-
-
 var radius;
 var x, y;
+
+function changeSliderX(n) {
+  console.log(n, width, radius);
+  // background(200);
+  // stroke('black');
+  // ellipse(width/2, height/2, 2 * radius, 2 * radius);
+  // ellipse(width/2, height/2, 2, 2);
+  // invertPoint({x: n, y: y});
+
+  x = n;
+  y = 10;
+  console.log(x);
+}
+
 
 function setup() {
   console.log('p5');
@@ -23,33 +35,13 @@ function setup() {
   ellipse(width/2, height/2, 2, 2);
 
   // get user input:
-  var val = $('#sub').on('click', function() {
-    // console.log($('#xVal').val());
-
-    x = $('#xVal').val();
-    y = $('#yVal').val();
-  });
-
-  // $('#xVal').oninput(function() {
-  //   console.log('hi');
+  // var val = $('#sub').on('click', function() {
+  //   // console.log($('#xVal').val());
+  //
+  //   x = $('#xVal').val();
+  //   y = $('#yVal').val();
   // });
 
-
-
-  // $("#xVal").slider();
-  //
-  //  var startPos = $("#xVal").slider("value");
-  //  var endPos = '';
-  //
-  //  $("#xVal").on("slidestop", function(event, ui) {
-  //      endPos = ui.value;
-  //
-  //      if (startPos != endPos) {
-  //          // do stuff
-  //      }
-  //
-  //      startPos = endPos;
-  //  });
 
 
 
@@ -63,17 +55,10 @@ function draw() {
   // Ok just had to be in draw:
   // invertPoint({x: x, y: y});
 
-
-
   background(200);
-  // noFill();
   stroke('black');
   ellipse(width/2, height/2, 2 * radius, 2 * radius);
-  // stroke('red');
   ellipse(width/2, height/2, 2, 2);
-  // stroke('blue');
-
-  // stroke('purple');
   invertPoint({x: x, y: y});
 
 }
