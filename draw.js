@@ -1,9 +1,10 @@
 
+// $(document).ready(function() {
+//   console.log('jquery');
+// });
 
-$(document).ready(function() {
-  console.log('jquery');
-});
 var radius;
+var x, y;
 
 function setup() {
   console.log('p5');
@@ -16,11 +17,23 @@ function setup() {
 
   ellipse(width/2, height/2, 2, 2);
 
-  invertPoint({x: 290, y: 60});
+  var val = $('#sub').on('click', function() {
+    console.log($('#xVal').val());
+
+    x = $('#xVal').val();
+    y = $('#yVal').val();
+  });
+
+
+  invertPoint({x: 10, y: 10});
+
 }
 
 function draw() {
+  // console.log();
 
+  // Ok just had to be in draw:
+  invertPoint({x: x, y: y});
 }
 
 function invertPoint(p) {
