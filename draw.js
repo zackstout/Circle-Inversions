@@ -1,7 +1,12 @@
 
+
+$(document).ready(function() {
+  console.log('jquery');
+});
 var radius;
 
 function setup() {
+  console.log('p5');
   createCanvas(700, 700);
   background(200);
 
@@ -11,7 +16,7 @@ function setup() {
 
   ellipse(width/2, height/2, 2, 2);
 
-  invertPoint({x: 90, y: 60});
+  invertPoint({x: 290, y: 60});
 }
 
 function draw() {
