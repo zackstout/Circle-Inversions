@@ -51,7 +51,13 @@ function draw() {
   stroke('black');
   ellipse(width/2, height/2, 2 * radius, 2 * radius);
   ellipse(width/2, height/2, 2, 2);
-  invertPoint({x: x, y: y});
+  // invertPoint({x: x, y: y});
+
+
+  invertPoint({x: 70, y: 70});
+
+  invertPoint({x: 170, y: 170});
+
 
 }
 
