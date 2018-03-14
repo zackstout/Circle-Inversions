@@ -7,18 +7,12 @@ var radius;
 var x, y;
 
 function changeSliderX(n) {
-  console.log(n, width, radius);
-  // background(200);
-  // stroke('black');
-  // ellipse(width/2, height/2, 2 * radius, 2 * radius);
-  // ellipse(width/2, height/2, 2, 2);
-  // invertPoint({x: n, y: y});
-
   x = n;
-  y = 10;
-  console.log(x);
 }
 
+function changeSliderY(n) {
+  y = n;
+}
 
 function setup() {
   console.log('p5');
@@ -42,11 +36,7 @@ function setup() {
   //   y = $('#yVal').val();
   // });
 
-
-
-
   invertPoint({x: 10, y: 10});
-
 }
 
 function draw() {
@@ -56,6 +46,8 @@ function draw() {
   // invertPoint({x: x, y: y});
 
   background(200);
+  // invertPoint({x: 10, y: 10});
+
   stroke('black');
   ellipse(width/2, height/2, 2 * radius, 2 * radius);
   ellipse(width/2, height/2, 2, 2);
@@ -72,12 +64,14 @@ function invertPoint(p) {
   stroke('purple');
   ellipse(p.x, p.y, 2, 2);
 
+  // Ok we ended up not needing this:
   var theta = atan(p.y/p.x);
   // console.log(theta);
 
   var distance = dist(p.x, p.y, 0, 0);
   // console.log(distance);
 
+  // Following the formula for inversion in a circle:
   var invertDistance = Math.pow(radius, 2) / distance;
 
   // console.log(invertDistance);
