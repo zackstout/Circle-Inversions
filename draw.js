@@ -61,8 +61,9 @@ function invertPoint(p) {
 
   // draw point:
   // stroke('red');
-  stroke('purple');
-  ellipse(p.x, p.y, 2, 2);
+  stroke('goldenrod');
+  fill('goldenrod');
+  ellipse(p.x, p.y, 6, 6);
 
   // Ok we ended up not needing this:
   var theta = atan(p.y/p.x);
@@ -80,7 +81,8 @@ function invertPoint(p) {
 
   // draw inverse point:
   stroke('darkGreen');
-  ellipse(p.x * ratio, p.y * ratio, 2, 2);
+  fill('darkGreen');
+  ellipse(p.x * ratio, p.y * ratio, 6, 6);
 
   // Ok let's not use this:
   // rotate(theta);
@@ -94,6 +96,7 @@ function invertPoint(p) {
   translate(p.x, p.y);
   stroke('blue');
 
+  noFill();
   ellipse(midpoint.x, midpoint.y, 5, 5);
   stroke('black');
   ellipse(midpoint.x, midpoint.y, newDiameter, newDiameter);
