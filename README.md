@@ -5,4 +5,7 @@ Writing the code to implement circle inversion in order to draw some sketches wi
 <!-- <img src="http://media.giphy.com/media/fdPqydNouhynz4PWrZ/giphy.gif" width="800px"> -->
 
 Each circle drawn (using the seed point and its inverted point) is orthogonal to the circle of inversion:
+
 <img src="http://media.giphy.com/media/24FRXnLI8y8jHFKVAO/giphy.gif" width="800px">
+
+Notice how the golden dot follows a linear path (since we're only changing its x-coordinate), whereas the green dot (its inverse point) follows a circle that includes the center of our circle of inversion. 
