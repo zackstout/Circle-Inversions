@@ -8,4 +8,6 @@ Each circle drawn (using the seed point and its inverted point) is orthogonal to
 
 <img src="http://media.giphy.com/media/24FRXnLI8y8jHFKVAO/giphy.gif" width="800px">
 
-Notice how the golden dot follows a linear path (since we're only changing its x-coordinate), whereas the green dot (its inverse point) follows a circle that includes the center of our circle of inversion. 
+Notice how the golden dot follows a linear path (since we're only changing its x-coordinate), whereas the green dot (its inverse point) follows a circle that includes the center of our circle of inversion.
+
+![screen shot 2018-03-14 at 6 37 46 pm](https://user-images.githubusercontent.com/29472568/37557659-eefe71d0-29d5-11e8-95ae-5031920f8e1b.png)
